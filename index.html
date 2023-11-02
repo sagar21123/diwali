@@ -13,32 +13,34 @@
             margin: 0;
             box-sizing: border-box;
             font-family: 'Rubik', sans-serif;
-            color: white;
         }
 
         body {
             width: 100vw;
-            height: 100vh;
+            /* height: 100vh; */
             font-family: sans-serif;
-            background: url(./main_bg.png);
+            /* background-image: url('./main_bg.png');
             background-position: center;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
+            /* background-size: 100%; */
             margin: 0;
+            background-color: #6b0012;
             overflow-x: hidden;
+            overflow-y: scroll;
         }
 
-        /* .header {
-            background-color: black;
+        .header {
+            /* background-color: black; */
             color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1.5rem 2rem;
             position: relative;
-            background: url(./Header.png);
+            background-image: url('./Header.png');
             background-position: center;
             background-repeat: no-repeat;
-        } */
+        }
 
         .arrow {
             height: 20px;
@@ -66,13 +68,9 @@
         }
 
         .info_details {
-            margin: 2rem;
+            margin: 1rem 2rem;
             color: white;
             letter-spacing: 0.02em;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
             padding-bottom: 1rem;
         }
 
@@ -120,22 +118,25 @@
             font-size: 0.7rem;
             
         }
-        .coming{
-            padding: 2rem 1rem 0 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .main_banner{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
         }
 
 
         @media (max-width : 768px) {
-            .header {
-                padding: 2rem 1rem;
-                background-size: cover;
-            }
+            body {
+            /* width: 100vw; */
+            /* height: 200vh; */
+            background-image: url('./main_bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-size: 100%; */
+            /* margin: 0;
+            overflow-x: hidden;
+            overflow-y: scroll; */
+        }
 
             .mid_header {
                 gap: 0.3rem;
@@ -152,6 +153,11 @@
                 font-size: 0.9rem;
             }
 
+            .info_details {
+            padding-bottom: 0.5rem;
+            margin: 1rem;
+        }
+
             table {
                 width: auto;
             }
@@ -160,17 +166,22 @@
 </head>
 
 <body>
-    <!-- <div class="header">
-        <img src="./arrow.png" alt="" class="arrow">
-        <div class="mid_header">
-            <h2 class="main_heading">DIWALI LEADERBOARD</h2>
-            <h4 class="sub_heading">Win Guaranteed 1gm <b style="color: rgb(252, 222, 100); ">GOLD</b> coin</h4>
-        </div>
-    </div> -->
-    <h1 class="coming">COMING SOON <span style="color: aquamarine;">&#62;&#62;</span> </h1>
-    <div style="margin: 2rem 1rem 0 2rem; display: flex; gap: 3rem; justify-content: space-around; align-items: center; ">
-        <span>Start Date : 9 Nov 2023 12:00AM</span>
-        <span>End Date : 15 Nov 2023 11:59PM</span>
+    <img class="main_banner" src="coinm .jpg" alt="">
+    <div class="info_details">
+        <h3 class="info_head">Information details : </h3>
+        <ul class="info_items">
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">To participate in the RummyXL Diwali Leaderboard competition, simply play cash games on any Rummy table, whether it's in Pool mode, Deal mode, or Points mode.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">The RummyXL Diwali Leaderboard starts on November 9th at 12:00 AM and concludes/ends on November 15th at 11:59 PM.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">To lead the Diwali leaderboard, focus on your net winnings. Play more, increase your earnings and your rank, and aim for amazing Diwali rewards.</li>
+            <li class="info_row"><img src="./hand_1.png" class="hand_img" alt=""> If the net winnings are equal, the person who scored last will be ranked higher.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">All standard terms and conditions of Rummyxl.com are applicable.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt=""> In case of any disputes, the decision made by Rummyxl.com management will be considered as the final and binding one.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt=""> All games will be reviewed, and if fair play violations are discovered, the user will be disqualified from the leaderboard.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt=""> All applicable government taxes, if any, will be charged.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">Prizes will be added to the Real Cash (Deposit) accounts of eligible winners within 48 hours.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">The winners will receive 22-karat gold coin.</li>
+            <li class="info_row"> <img src="./hand_1.png" class="hand_img" alt="">The top three winners will be contacted by our customer support team for prize delivery.</li>
+        </ul>
     </div>
     <div class="info_details">
         <h3 class="info_head">Leaderboard Prizes Breakup : </h3>
@@ -216,7 +227,7 @@
                 <td>201-300</td>
             </tr>
         </table>
-        <span class="note">*For any queries, contact our Support Team <u>9205479988</u>.</span>
+        <span class="note">*For any queries, contact our Support Team <u>9205479988</u>.</span> 
     </div>
 </body>
 
