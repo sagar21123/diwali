@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
         * {
             padding: 0;
             margin: 0;
@@ -13,17 +15,18 @@
             font-family: 'Rubik', sans-serif;
             color: white;
         }
+
         body {
             width: 100vw;
             height: 100vh;
             font-family: sans-serif;
-            /* background: url(./main_bg.png);
+            background: url(./main_bg.png);
             background-position: center;
-            background-repeat: no-repeat; */
-            background-color: #270108;
+            background-repeat: no-repeat;
             margin: 0;
             overflow-x: hidden;
         }
+
         /* .header {
             background-color: black;
             color: white;
@@ -36,10 +39,12 @@
             background-position: center;
             background-repeat: no-repeat;
         } */
+
         .arrow {
             height: 20px;
             width: 20px;
         }
+
         .mid_header {
             position: absolute;
             top: 50%;
@@ -49,14 +54,17 @@
             flex-direction: column;
             align-items: center;
         }
+
         .main_heading {
             font-weight: 600;
             color: rgb(252, 222, 100);
         }
+
         .sub_heading {
             font-weight: 300;
             font-size: 0.8rem;
         }
+
         .info_details {
             margin: 2rem;
             color: white;
@@ -67,23 +75,28 @@
             align-items: center;
             padding-bottom: 1rem;
         }
+
         .info_items {
             list-style-type: none;
         }
+
         .info_head {
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
+
         .info_row {
             font-weight: 400;
             font-size: 14px;
             margin-bottom: 0.2rem;
         }
+
         .hand_img {
             margin-right: 5px;
             height: 10px;
             width: 16px;
         }
+
         table {
             border-collapse: collapse;
             width: 50%;
@@ -91,6 +104,7 @@
             margin : 1rem 0;
             /* Border color set to a dark shade of gray */
         }
+
         th,
         td {
             border: 1px solid white;
@@ -104,6 +118,7 @@
             /* text-wrap: nowrap; */
             font-weight: 100;
             font-size: 0.7rem;
+            
         }
         .coming{
             padding: 2rem 1rem 0 2rem;
@@ -114,29 +129,36 @@
             justify-content: center;
             align-items: center;
         }
+
+
         @media (max-width : 768px) {
             .header {
                 padding: 2rem 1rem;
                 background-size: cover;
             }
+
             .mid_header {
                 gap: 0.3rem;
             }
+
             .main_heading {
                 font-size: 1.3rem;
                 text-wrap: nowrap;
                 color: rgb(252, 222, 100);
             }
+
             .sub_heading {
                 text-wrap: nowrap;
                 font-size: 0.9rem;
             }
+
             table {
                 width: auto;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- <div class="header">
         <img src="./arrow.png" alt="" class="arrow">
@@ -158,15 +180,15 @@
                 <th>Rank</th>
             </tr>
             <tr>
-                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">1gm Gold Coin</td>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">1gm Gold Coin<img style="width: 15px; height: 15px;" src="./1gm.png" alt=""></td>
                 <td>1st</td>
             </tr>
             <tr>
-                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">0.5gm Gold Coin</td>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">0.5gm Gold Coin<img style="width: 18px; height: 18px;" src="./gold2.png" alt=""></td>
                 <td>2nd</td>
             </tr>
             <tr>
-               <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">20gm Silver Coin</td>
+               <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">20gm Silver Coin<img style="width: 18px; height: 18px;" src="./20gm.png" alt=""></td>
                 <td>3rd</td>
             </tr>
             <tr>
@@ -197,4 +219,5 @@
         <span class="note">*For any queries, contact our Support Team <u>9205479988</u>.</span>
     </div>
 </body>
+
 </html>
